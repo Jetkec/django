@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/03-post/" method="post">
+        {#    只要用于在服务器端通过csrf验证的    #}
+        {% csrf_token %}
+        <p>
+            <input type="text" name="uname">
+        </p>
+        <p>
+            <input type="number" name="age">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+</body>
+</html>
